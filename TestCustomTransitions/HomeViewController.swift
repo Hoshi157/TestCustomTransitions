@@ -35,18 +35,19 @@ extension HomeViewController: UICollectionViewDelegate {
         let detailVC = self.storyboard?.instantiateViewController(withIdentifier: "Detail") as! DetailViewController
         let cell = collectionView.cellForItem(at: indexPath)!
         let currentCellFrame = cell.layer.presentation()!.frame
-        let cardPresentationFramOnScreen = cell.superview!.convert(currentCellFrame, to: nil)
-        
+        let cardPresentationFramOnScreen = cell.superview!.convert(currentCellFrame, to: nil) //　Screenからセルの座標
+        // cellのFrameの大きさ????
         let cardFrameWithoutTransition = { () -> CGRect in
             let center = cell.center
             let size = cell.bounds.size
             let r = CGRect(x: center.x - size.width / 2, y: center.y - size.height / 2, width: size.width, height: size.height)
             return cell.superview!.convert(r, to: nil)
         }()
+        
         let params = CardTransition.Params(fromCardFrame: cardPresentationFramOnScreen, fromCardWithoutTransform: cardFrameWithoutTransition, fromCell: cell)
         transition = CardTransition(params: params)
-        detailVC.transitioningDelegate = transition
-        detailVC.modalPresentationStyle = .custom
+        detailVC.transitioningDelegate = transition // delegate
+        detailVC.modalPresentationStyle = .custom // カスタムでFullに
         present(detailVC, animated: true)
     }
     
@@ -54,7 +55,7 @@ extension HomeViewController: UICollectionViewDelegate {
 
 extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return 2
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

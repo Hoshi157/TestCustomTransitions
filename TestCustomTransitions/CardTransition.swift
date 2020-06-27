@@ -9,10 +9,10 @@
 import UIKit
 
 final class CardTransition: NSObject, UIViewControllerTransitioningDelegate {
-    
+    // Transition Delegate
     struct Params {
         let fromCardFrame: CGRect
-        let fromCardWithoutTransform: CGRect
+        let fromCardWithoutTransform: CGRect // これはdesmiss時に使用
         let fromCell: UICollectionViewCell
     }
     
@@ -22,7 +22,7 @@ final class CardTransition: NSObject, UIViewControllerTransitioningDelegate {
         self.params = params
         super.init()
     }
-    
+    // Present Animation
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         let params = PresentCardAnimator.Params.init(fromCardFrame: self.params.fromCardFrame, fromCell: self.params.fromCell)
         return PresentCardAnimator(params: params)

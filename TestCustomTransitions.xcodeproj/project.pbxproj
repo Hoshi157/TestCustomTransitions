@@ -17,7 +17,6 @@
 		8D36D2AF24A44DF500C449FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D36D2AD24A44DF500C449FF /* LaunchScreen.storyboard */; };
 		8D36D2B724A44E7A00C449FF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36D2B624A44E7A00C449FF /* DetailViewController.swift */; };
 		8D36D2B924A45BA200C449FF /* PresentCardAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36D2B824A45BA200C449FF /* PresentCardAnimator.swift */; };
-		8D9DFC0224A48B87006F7902 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9DFC0124A48B87006F7902 /* GlobalConstants.swift */; };
 		8D9DFC0424A4B5AF006F7902 /* CardTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9DFC0324A4B5AF006F7902 /* CardTransition.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +33,6 @@
 		8D36D2B024A44DF500C449FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D36D2B624A44E7A00C449FF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8D36D2B824A45BA200C449FF /* PresentCardAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentCardAnimator.swift; sourceTree = "<group>"; };
-		8D9DFC0124A48B87006F7902 /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		8D9DFC0324A4B5AF006F7902 /* CardTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,7 +72,6 @@
 				8D36D2B624A44E7A00C449FF /* DetailViewController.swift */,
 				8D36D2B824A45BA200C449FF /* PresentCardAnimator.swift */,
 				8D9DFC0324A4B5AF006F7902 /* CardTransition.swift */,
-				8D9DFC0124A48B87006F7902 /* GlobalConstants.swift */,
 				8D254D9124A5A97B00669448 /* CardPresentationController.swift */,
 				8D254D9324A5AB2300669448 /* UIView+AutoLayout.swift */,
 				8D36D2A824A44DF300C449FF /* Main.storyboard */,
@@ -162,7 +159,6 @@
 				8D254D9224A5A97B00669448 /* CardPresentationController.swift in Sources */,
 				8D36D2A324A44DF300C449FF /* AppDelegate.swift in Sources */,
 				8D36D2A524A44DF300C449FF /* SceneDelegate.swift in Sources */,
-				8D9DFC0224A48B87006F7902 /* GlobalConstants.swift in Sources */,
 				8D9DFC0424A4B5AF006F7902 /* CardTransition.swift in Sources */,
 				8D36D2B724A44E7A00C449FF /* DetailViewController.swift in Sources */,
 			);
